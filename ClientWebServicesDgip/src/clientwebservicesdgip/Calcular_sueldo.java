@@ -28,30 +28,71 @@ public class Calcular_sueldo extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        Ingresar_sueldo = new javax.swing.JTextField();
+        Calcular_sueldo = new javax.swing.JButton();
+        resultado_sueldo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Ingrese su sueldo por hora");
+
+        Ingresar_sueldo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Ingresar_sueldoActionPerformed(evt);
+            }
+        });
+
+        Calcular_sueldo.setText("Calcular sueldo");
+        Calcular_sueldo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Calcular_sueldoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(112, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(96, 96, 96))
+                .addGap(55, 55, 55)
+                .addComponent(Calcular_sueldo)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(30, 30, 30)
+                            .addComponent(resultado_sueldo, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(100, 100, 100)
+                            .addComponent(Ingresar_sueldo, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(46, 46, 46)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(229, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(Ingresar_sueldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Calcular_sueldo)
+                .addGap(18, 18, 18)
+                .addComponent(resultado_sueldo, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(25, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void Calcular_sueldoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Calcular_sueldoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Calcular_sueldoActionPerformed
+
+    private void Ingresar_sueldoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Ingresar_sueldoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Ingresar_sueldoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -89,6 +130,9 @@ public class Calcular_sueldo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Calcular_sueldo;
+    private javax.swing.JTextField Ingresar_sueldo;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel resultado_sueldo;
     // End of variables declaration//GEN-END:variables
 }
