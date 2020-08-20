@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="https://acefd04f361a.ngrok.io/WebServicesDgip/calcularhoras?wsdl" uri="xml-resources/web-service-references/calcularhoras/wsdl/acefd04f361a.ngrok.io/WebServicesDgip/calcularhoras.wsdl"/>
+    <system systemId="http://acefd04f361a.ngrok.io:80/WebServicesDgip/calcularhoras?xsd=1" uri="xml-resources/web-service-references/calcularhoras/wsdl/acefd04f361a.ngrok.io_80/WebServicesDgip/calcularhoras.xsd_1.xsd"/>
+</catalog>
